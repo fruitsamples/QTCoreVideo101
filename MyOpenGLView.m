@@ -11,7 +11,7 @@ Change History (most recent first): <3> 04/15/08 added automatic texture coordin
                                                  add clean up code
                                     <1> 05/23/05 initial release
 
-© Copyright 2005-2008 Apple Computer, Inc. All rights reserved.
+© Copyright 2005-2011 Apple Computer, Inc. All rights reserved.
 
 IMPORTANT:  This Apple software is supplied to you by Apple Computer, Inc. ("Apple") in
 consideration of your agreement to the following terms, and your use, installation,
@@ -131,7 +131,7 @@ static CVReturn MyRenderCallback(CVDisplayLinkRef displayLink,
 // set up the OpenGL environs
 - (void)prepareOpenGL
 {
-	long swapInterval = 1;
+	GLint swapInterval = 1;
     
     glShadeModel(GL_SMOOTH);                // enable smooth shading
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);   // black background
